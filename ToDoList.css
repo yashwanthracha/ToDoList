@@ -1,0 +1,141 @@
+body {
+    background-color: antiquewhite;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    background-color: darksalmon;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 1.5em;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.inbox {
+    text-align: center;
+}
+
+.inbox label {
+    font-size: 1.2em;
+}
+
+.inbox input {
+    height: 30px;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.inbox button {
+    background-color: rgb(194, 198, 128);
+    border: none;
+    width: 80px;
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.headlist {
+    text-align: center;
+    background-color: cadetblue;
+    margin: 20px auto;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.bodylist {
+    text-align: left;
+    background-color: rgb(169, 204, 205);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.list-item span {
+    flex: 1;
+    font-size: 1em;
+    padding: 5px;
+}
+
+.delete-button, .edit-button, .complete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 0.9em;
+}
+
+.delete-button:hover, .edit-button:hover, .complete-button:hover {
+    background-color: darkred;
+}
+
+.edit-button {
+    background-color: orange;
+}
+
+.edit-button:hover {
+    background-color: darkorange;
+}
+
+.complete-button {
+    background-color: green;
+}
+
+.complete-button:hover {
+    background-color: darkgreen;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+@media (max-width: 600px) {
+    .inbox input, .inbox button {
+        width: 90%;
+        font-size: 1.2em;
+    }
+
+    .list-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list-item span {
+        margin-bottom: 10px;
+    }
+
+    .delete-button, .edit-button, .complete-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

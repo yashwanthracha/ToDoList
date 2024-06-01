@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ToDoList.css">
+    <link rel="icon" href="./download.jpeg">
+    <title>ToDoList</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">To Do List</h1>
+    </div>
+
+    <div class="container inbox">
+        <label for="addlist"><b>Add Item</b></label>
+        <input type="text" id="addlist">
+        <span><button type="submit" id="addButton">Add</button></span>
+    </div>
+
+    <div class="container listitems">
+        <div class="container headlist">
+            <h2>List of items</h2>
+        </div>
+        <div class="container bodylist" id="itemList">
+            <!-- Items will be added here -->
+        </div>
+    </div>
+
+    <script src="./ToDoList.js"></script>
+</body>
+</html>
